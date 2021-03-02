@@ -1,0 +1,46 @@
+@main-font: Open Sans, Arial, sans-serif;
+
+@color-white: #ffffff;
+@color-white_dark: #F3F6FB;
+@color-white_50: rgba(255, 255, 255, 0.5);
+@color-white_20: rgba(255, 255, 255, 0.2);
+@color-white_15: rgba(255, 255, 255, 0.15);
+
+@color-black: #252A2E;
+@color-black_light: #343A40;
+
+@color-gray: #9FA5B9;
+@color-gray_medium: #6D7281;
+@color-gray_dark: #6A6F7B;
+@color-gray_light: #D9E1EA;
+@color-gray_extralight: #E7EDF4;
+
+@color-blue: #0085E5;
+@color-blue_dark: #0075FB;
+
+@color-green: #18B93B;
+
+@color-red: #F53434;
+@color-red_medium: #ED1F24; 
+@color-red_dark: #B92828;
+
+@color-orange: #FF6B00;
+
+@color-yellow: #FFC700;
+
+@color-violet: #A034F5;
+
+.transitions(@for: all) {
+	transition: @for ease-in-out .3s;
+}
+
+.color-style (@color, @background-color) {
+	color: @color;
+	background-color: @background-color;
+}
+
+.bg-img (@position: 50% 50%, @size: cover) {
+	background-position: @position;
+	background-repeat: no-repeat;
+	background-size: @size;
+}
